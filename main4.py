@@ -44,7 +44,7 @@ retrieval_chain = create_retrieval_chain(retriever_chain, document_chain)
 
 response = retrieval_chain.invoke({
     "chat_history": chat_history,
-    "input": "How can I add my liked tech products to Favourites section?",
+    "input": "How can I add my liked tech products to Favourites section of Sony web app?",
     "context": [Document(page_content="Here is the summarized answer for you")]
 })
 
